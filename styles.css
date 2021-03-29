@@ -75,9 +75,3 @@ html, body {
   min-height: 100%;
   min-width: 100%;
 }
-
-/* @media only screen and (min-width: 700px) and (max-width: 900px) {
-  #container {
-    width: 900px;
-  }
-} */
