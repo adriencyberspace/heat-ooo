@@ -5,12 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  
   <title>Document</title>
 </head>
 <body>
   <div id="container">
-    <img id="landing-fullscreen" src="assets/LandingFullscreenJPG.jpg">
+      <a id="landing-link" href=#>
+        <img id="landing-fullscreen" src="assets/LandingFullscreenJPG.jpg">
+      </a>
+      <img id="about-fullscreen" src="assets/AboutFullscreenJPG.jpg">
   </div>
+
+  <a id="email-link" href="mailto:info@work.ooo">
+    <div id="email-div"></div>
+  </a>
+
+  <a id="back-link" href="#">
+    <div id="go-back"></div>
+  </a>
   
 </body>
+<script>
+
+var landingLink = document.getElementById('landing-link');
+var aboutImage = document.getElementById('about-fullscreen');
+var emailLink = document.getElementById('email-link');
+var backLink = document.getElementById('back-link');
+
+  landingLink.addEventListener('click', function(){
+    landingLink.style.display="none"
+    aboutImage.style.display= "block"
+    emailLink.style.display = "block"
+    backLink.style.display = "block"
+  });
+
+  backLink.addEventListener('click', function(){
+    landingLink.style.display="inline"
+    aboutImage.style.display= "none"
+    emailLink.style.display = "none"
+    backLink.style.display = "none"
+  })
+
+</script>
 </html>

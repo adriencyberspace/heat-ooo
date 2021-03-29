@@ -49,29 +49,62 @@ table {
 	box-sizing: border-box;
 }
 
-/* Project CSS */
+/* ----/// Project CSS \\\---- */
+
 html, body {
   overscroll-behavior: none;
 }
-
-/* body {
-  background-image: url(assets/LandingFullscreenJPG.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-} */
 
 #container {
   width: 100vw;
   height: 100vh;
 }
 
-#landing-fullscreen {
-  max-height: 100%;
-  max-width: 100%;
+#landing-fullscreen, #about-fullscreen {
   min-height: 100%;
+  max-height: 100%;
   min-width: 100%;
+  max-width: 100%;
 }
+
+/* Display changes upon click */
+#landing-fullscreen {
+  display: block;
+}
+
+/* Display changes upon click */
+#about-fullscreen {
+  display: none;
+}
+
+#email-link {
+  display: none;
+}
+
+#email-div {
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+}
+
+/* Display changes upon click */
+#back-link {
+  display: none;
+}
+
+#go-back {
+  height: 33%;
+  width: 20%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
