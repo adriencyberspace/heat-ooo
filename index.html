@@ -10,11 +10,20 @@
 </head>
 <body>
   <div id="container">
+    <span id="fullscreen">
       <a id="landing-link" href=#>
         <img id="landing-fullscreen" src="assets/LandingFullscreenJPG.jpg">
       </a>
       <img id="about-fullscreen" src="assets/AboutFullscreenJPG.jpg">
+    </span>
+    <span id="mobile">
+      <a id="landing-link-mobile" href=#>
+        <img id="landing-mobile" src="assets/LandingVertical.jpg">
+      </a>
+      <img id="about-mobile" src="assets/AboutVertical.jpg">
+    </span>
   </div>
+
 
   <a id="email-link" href="mailto:info@work.ooo">
     <div id="email-div"></div>
@@ -27,10 +36,12 @@
 </body>
 <script>
 
-var landingLink = document.getElementById('landing-link');
-var aboutImage = document.getElementById('about-fullscreen');
-var emailLink = document.getElementById('email-link');
-var backLink = document.getElementById('back-link');
+  const landingLink = document.getElementById('landing-link');
+  const aboutImage = document.getElementById('about-fullscreen');
+  const landingLinkMobile = document.getElementById('landing-link-mobile')
+  const aboutImageMobile = document.getElementById('about-mobile');
+  const emailLink = document.getElementById('email-link');
+  const backLink = document.getElementById('back-link');
 
   landingLink.addEventListener('click', function(){
     landingLink.style.display="none"
@@ -45,6 +56,24 @@ var backLink = document.getElementById('back-link');
     emailLink.style.display = "none"
     backLink.style.display = "none"
   })
+
+  landingLinkMobile.addEventListener('click', function(){
+    landingLinkMobile.style.display="none"
+    aboutImageMobile.style.display= "block"
+    emailLink.style.display = "block"
+    backLink.style.display = "block"
+
+    // If #go-back is clicked in mobile view:
+    backLink.addEventListener('click', function(){
+    landingLinkMobile.style.display="inline"
+    aboutImageMobile.style.display= "none"
+    emailLink.style.display = "none"
+    backLink.style.display = "none"
+  })
+  })
+
+  
+
 
 </script>
 </html>
