@@ -53,6 +53,7 @@ table {
 
 html, body {
   overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
 }
 
 #container {
