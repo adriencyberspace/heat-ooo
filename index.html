@@ -11,20 +11,22 @@
 </head>
 <body>
   <div id="container">
+
     <span id="fullscreen">
       <a id="landing-link" href=#>
         <img id="landing-fullscreen" src="assets/LandingFullscreenJPG.jpg">
       </a>
       <img id="about-fullscreen" src="assets/AboutFullscreenJPG.jpg">
     </span>
+
     <span id="mobile">
       <a id="landing-link-mobile" href=#>
         <img id="landing-mobile" src="assets/LandingVertical.jpg">
       </a>
       <img id="about-mobile" src="assets/AboutVertical.jpg">
     </span>
-  </div>
 
+  </div>
 
   <a id="email-link" href="mailto:info@work.ooo">
     <div id="email-div"></div>
@@ -44,30 +46,34 @@
   const emailLink = document.getElementById('email-link');
   const backLink = document.getElementById('back-link');
 
+  // Fullscreen - Display about page and links
   landingLink.addEventListener('click', function(){
-    landingLink.style.display="none"
+    landingLink.style.display = "none"
     aboutImage.style.display= "block"
     emailLink.style.display = "block"
     backLink.style.display = "block"
   });
 
+  // Fullscreen - Display landing page and hide links
   backLink.addEventListener('click', function(){
-    landingLink.style.display="inline"
-    aboutImage.style.display= "none"
+    landingLink.style.display = "inline"
+    aboutImage.style.display = "none"
     emailLink.style.display = "none"
     backLink.style.display = "none"
   })
 
+  // Mobile - Display about page and links
   landingLinkMobile.addEventListener('click', function(){
-    landingLinkMobile.style.display="none"
-    aboutImageMobile.style.display= "block"
+    landingLinkMobile.style.display = "none"
+    aboutImageMobile.style.display = "block"
     emailLink.style.display = "block"
     backLink.style.display = "block"
 
     // If #go-back is clicked in mobile view:
+    // Mobile - Display landing page and hide links
     backLink.addEventListener('click', function(){
-      landingLinkMobile.style.display="inline"
-      aboutImageMobile.style.display= "none"
+      landingLinkMobile.style.display = "inline"
+      aboutImageMobile.style.display = "none"
       emailLink.style.display = "none"
       backLink.style.display = "none"
     })
