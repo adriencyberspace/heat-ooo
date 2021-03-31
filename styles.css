@@ -120,9 +120,10 @@ html, body {
 /* Mobile */
 @media only screen and (max-width: 750px) {
   html {
-		height: 100%;
+		min-height: 100%;
+    max-height: 100%;
 	}
-  
+
   #fullscreen {
     display: none;
   }
