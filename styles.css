@@ -53,8 +53,8 @@ table {
 
 html, body {
   overscroll-behavior: none;
-  -webkit-overflow-scrolling: auto;
-  overflow: hidden;
+  /* -webkit-overflow-scrolling: auto; */
+  overflow: scroll;
 }
 
 #container {
